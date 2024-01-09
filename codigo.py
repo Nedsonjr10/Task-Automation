@@ -42,15 +42,17 @@ for linha in table.index:
     pyautogui.write(str(table.loc[linha, "categoria"]))
     pyautogui.press("tab")
 
-    pyautogui.write(str(table.loc[linha, "preco"]))
+    pyautogui.write(str(table.loc[linha, "preco_unitario"]))
     pyautogui.press("tab")
 
     pyautogui.write(str(table.loc[linha, "custo"]))
     pyautogui.press("tab")
 
-    pyautogui.write(table.loc[linha, "obs"])
+    obs = table.loc[linha, "obs"]
+    if not pandas.isna(obs):
+         pyautogui.write(obs)
+    
     pyautogui.press("tab")
-
     pyautogui.press("enter")
     
     pyautogui.scroll(5000)
