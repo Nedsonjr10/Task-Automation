@@ -14,3 +14,8 @@ pyautogui.press("enter")
 time.sleep(3)
 
 pyautogui.click(x=799, y=353)
+
+pyautogui.write("nedson@gmail.com")
+pyautogui.press("tab")
+pyautogui.write("password")
+pyautogui.press("tab")
