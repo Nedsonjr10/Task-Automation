@@ -2,7 +2,7 @@
 
 ## About the project
 
-Project to demonstrate my knowledge of java by using it to automate tasks.
+Project to demonstrate my knowledge of python by using it to automate tasks.
 
 ## Technologies used
 
